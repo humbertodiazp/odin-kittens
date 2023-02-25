@@ -7,8 +7,12 @@
     <%= render kitten %>
     <p>
       <%= link_to "Show this kitten", kitten %>
+    <td><%= link_to "Delete", kitten_path(kitten), method: :delete %></td>
+
+      
     </p>
   <% end %>
 </div>
 
 <%= link_to "New kitten", new_kitten_path %>
+
